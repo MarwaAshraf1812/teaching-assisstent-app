@@ -22,14 +22,16 @@ A Retrieval-Augmented Generation (RAG) teaching assistant that helps people unde
 
 - **Python** for the backend
 - **FastAPI** for the API and document-related endpoints
-- **RAG pipeline** for retrieval-grounded answers
-- **PDF text extraction**, an **embedding model**, a **vector database**, and an **LLM provider** to be selected during implementation
+- **LangChain** for the RAG pipeline
+- **pypdf** for PDF text extraction
+- **Chroma** for vector storage
+- **OpenAI** for embeddings and answer generation
 
-The specific model provider and vector database have not been selected yet.
+These are the initial technology choices and can be changed as the project develops.
 
 ## Project Status
 
-This repository is at the initial setup stage. The application, API routes, dependency list, and run instructions are not implemented yet.
+This repository is at the initial setup stage. The application, API routes, and run instructions are not implemented yet.
 
 ## Local Development
 
@@ -38,9 +40,10 @@ Python 3.10 or newer is recommended. Create and activate a virtual environment f
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
-Install and run instructions will be added once the backend dependencies and application entry point are in place.
+Application run instructions will be added once the backend entry point is in place.
 
 ## Planned Improvements
 
